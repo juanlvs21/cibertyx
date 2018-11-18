@@ -1,0 +1,16 @@
+#Ocultar Carpetas
+#Options -Indexes
+Options -Indexes +FollowSymlinks
+
+#Redirecciona Errores
+ErrorDocument 404 /cibertyx/404.php
+
+AddDefaultCharset UTF-8
+ 
+#URL Amigables
+RewriteEngine on
+RewriteBase /cibertyx/
+
+RewriteRule ^inicio		    index.php [NC,L]
+RewriteRule ^trabajos	    trabajos.php [NC,L]
+RewriteRule ^contacto	    contacto.php [NC,L]
